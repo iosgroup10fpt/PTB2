@@ -10,7 +10,7 @@ import UIKit
 import Darwin
 import Foundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
 
     @IBOutlet weak var numberA: UITextField!
     @IBOutlet weak var numberB: UITextField!
@@ -51,12 +51,22 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         kq.isHidden = true
         kq2.isHidden = true
+        self.numberA.delegate = self;
+        self.numberB.delegate = self;
+        self.numberC.delegate = self;
         // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        let aSet = NSCharacterSet(charactersIn:"0123456789").inverted
+        let compSepByCharInSet = string.components(separatedBy: aSet)
+        let numberFiltered = compSepByCharInSet.joined(separator: "")
+        return string == numberFiltered
     }
 
 
