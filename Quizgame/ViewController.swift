@@ -30,6 +30,7 @@ class ViewController: UIViewController {
             kq.isHidden = false
             kq.text = "Phuong Trinh Vo Nghiem"
         }
+//            test 1
         else if(D == 0){
             NSLog(String(temp))
             temp = Double(-b)/Double((2*a))
