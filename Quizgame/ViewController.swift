@@ -23,7 +23,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         
         var temp:Double! = 0
         var temp1:Double! = 0
-        if( numberA.text == "" || numberB.text == "" || numberC.text == "" || numberA.text == "-" || numberB.text == "-" || numberC.text == "-" || numberA.text == "-0" || numberB.text == "-0" || numberC.text == "-0"){
+        if( numberA.text == "" || numberB.text == "" || numberC.text == "" || numberA.text == "-" || numberB.text == "-" || numberC.text == "-" ){
             kq.isHidden = false
             kq.text = "Please input number"
         }
@@ -32,9 +32,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
             let b:Double = Double(numberB.text!)!
             let c:Double = Double(numberC.text!)!
             let D = b*b - 4*a*c
-            if( a == 0){
+            if( a == 0 || a == -0){
                 kq.isHidden = false
-                if( b == 0 ){
+                if( b == 0 || b == -0){
                     kq.text = "Number A and Number B different 0"
                     
                 }
