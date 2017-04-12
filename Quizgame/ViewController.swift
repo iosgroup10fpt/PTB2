@@ -23,11 +23,28 @@ class ViewController: UIViewController,UITextFieldDelegate {
         
         var temp:Double! = 0
         var temp1:Double! = 0
+        var check = false
+        let input1 = numberA.text!
+        let input2 = numberB.text!
+        let input3  = numberC.text!
+        
+        let a1 :Double? = Double(input1)
+        let b1 :Double? = Double(input2)
+        let c1 :Double? = Double(input3)
+        
         if( numberA.text == "" || numberB.text == "" || numberC.text == "" || numberA.text == "-" || numberB.text == "-" || numberC.text == "-" ){
             kq.isHidden = false
             kq.text = "Please input number"
         }
         else{
+            if (a1 != nil && b1 != nil && c1 != nil ){
+                
+                check = true
+                
+                
+                
+            }
+            if(check){
             let a:Double = Double(numberA.text!)!
             let b:Double = Double(numberB.text!)!
             let c:Double = Double(numberC.text!)!
@@ -35,7 +52,13 @@ class ViewController: UIViewController,UITextFieldDelegate {
             if( a == 0 || a == -0){
                 kq.isHidden = false
                 if( b == 0 || b == -0){
-                    kq.text = "Number A and Number B different 0"
+                    if(c == 0 || c == -0){
+                        kq.text = "Phuong Trinh Vo So Nghiem"
+                    }
+                    else{
+                        kq.text = "Phuong Trinh Vo Nghiem"
+                    }
+                    
                     
                 }
                 else{
@@ -44,10 +67,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
                     kq.text = String(format: "%.2f", temp)
                 }
                 
-                
-                
             }
-            if( a != 0 && b != 0){
+            else{
                 NSLog(" a khac 0 and B khac 0")
                 if(D < 0){
                     kq.isHidden = false
@@ -75,9 +96,16 @@ class ViewController: UIViewController,UITextFieldDelegate {
                     }
 
                 }
-        
+            }
+            else{
+                kq.isHidden = false
+                kq.text = "Input invailidate,Please input again!!"
+                numberA.text = ""
+                numberB.text = ""
+                numberC.text = ""
             }
         }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         kq.isHidden = true
