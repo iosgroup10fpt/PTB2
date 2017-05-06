@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8454F478C63E04EA044F4B26719B079263E2E85C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8454F478C63E04EA044F4B26719B079263E2E85C" : 9223372036854775807,
+    "F3281EE3CDF8F6959353E94C7ED2DB331F4D7F14" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B35B5D68-3892-4C0C-9129-E9FBD930120E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8454F478C63E04EA044F4B26719B079263E2E85C" : "PTB2\/",
+    "F3281EE3CDF8F6959353E94C7ED2DB331F4D7F14" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Quizgame",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Quizgame.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/iosgroup10fpt\/PTB2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8454F478C63E04EA044F4B26719B079263E2E85C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/iosgroup10fpt\/Animation.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F3281EE3CDF8F6959353E94C7ED2DB331F4D7F14"
+    }
+  ]
+}
